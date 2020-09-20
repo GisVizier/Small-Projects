@@ -8,8 +8,8 @@ Players.PlayerAdded:Connect(function(Player)
 
 		STATE_HANDLER:ChangeValue(Player,"Attacking",100)
 		if STATE_HANDLER:CheckValue(Player,"Attacking") then
-      print("WORKED")
-    end
+    		  print("WORKED")
+                end
 	end)
 	Player.CharacterRemoving:Connect(function(Character)
 		STATE_HANDLER:Sweep(Player)
